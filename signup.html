@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <style>
+        .social-icon {
+            height: 50;
+            width: 50px;
+            padding-top: 22px;
+            padding-bottom: 22px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        form {
+            background-color: white;
+            text-align: center;
+            border-right: 1px solid #ccc;
+            border-bottom: 1px solid #cccccc;
+            width: 500px;
+            margin-right: auto;
+            margin-left: auto;
+            box-shadow: 3px 3px 3px rgb(33, 33, 34);
+        }
+        #social-wrapper {
+            background-color: whitesmoke;
+            padding: 10px;
+            margin-top: 30px;
+        }
+        .input-user {
+            border: 0;
+            width: 100%;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #cccc;
+            margin-top: 15px;
+            font-size: 15px;
+            
+        }
+        #input-wrapper {
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-bottom: 15px;
+            padding-right: 20px;
+        }
+
+        #btn-register {
+           padding-top: 12px;
+           padding-bottom: 12px;
+           padding-right: 24px;
+           padding-left: 24px;
+           font-size: 18px;
+           color:whitesmoke;
+           border-collapse: collapse;
+           border-radius: 20px;
+            background-color: blue;
+
+        }
+        #btn-register:hover {
+            background-color: rebeccapurple;
+            color: red;
+        }
+        .login {
+            margin-left: 80px;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <h1 id="form-title">Register</h1>
+    <div id="social-wrapper">
+        <h1>Signup with: </h1>
+        <img class="social-icon" src="icons/goggle icon.png" alt="Google" />
+        <img class="social-icon" src="icons/facebook icon.png" alt="facebook" />
+        <img class="social-icon" src="icons/github icon.png" alt="Github" />
+        <img class="social-icon" src="icons/linkedin.png" alt="linkedin" />
+    </div>
+           <h1><strong>OR</strong></h1>
+    <div id="input-wrapper">
+        <input class="input-user" type="text" name="username" placeholder="Username" required/>
+    </div>
+    <div id="input-wrapper">
+        <input class="input-user" type="email" name="email" placeholder="Email" />
+    </div>
+    <div id="input-wrapper">
+        <input class="input-user" type="password" name="password" placeholder="Password" required />
+    </div>
+    <div id="input-wrapper">
+        <input class="input-user" type="password" name="confirm-password" placeholder="Confirm password" required />
+    </div>
+    
+    
+        <input id="btn-register" class="btn-register" type="submit" name="register" value="Register" />
+        <h3 class="login">You have an account already? <a  href="login.html">Login here</a> </h3>
+
+</form>
+<script src="signup.js"></script>
+</body>
+</html>
